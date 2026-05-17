@@ -1,0 +1,43 @@
+# Credentials and secrets
+youtube_credentials/
+*.key
+*.pem
+*.env
+.env.local
+
+# Generated and temporary files
+output/
+clips/
+voiceovers/
+scripts/video_*.txt
+
+# Java/Maven build artifacts
+target/
+*.class
+*.jar
+*.war
+*.ear
+dependency-reduced-pom.xml
+
+# IDEs
+.idea/
+.vscode/
+*.iml
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.Python
+venv/
+env/

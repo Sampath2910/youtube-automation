@@ -1,0 +1,36 @@
+{
+  "name": "YouTube Automation - Kids Content (Java)",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "8b8e6b3c-6e2c-4e8c-8b8e-6b3c6e2c4e8c",
+      "name": "When clicking \"Execute Workflow\"",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [100, 240]
+    },
+    {
+      "parameters": {
+        "command": "java -jar \"C:\\Users\\akkap\\OneDrive\\Desktop\\youtube automation\\java-pipeline\\target\\youtube-automation-1.0.0.jar\" \"A story about a friendly dragon who loves to bake cookies\""
+      },
+      "id": "a1b2c3d4-e5f6-7g8h-i9j0-k1l2m3n4o5p6",
+      "name": "Execute Java Pipeline",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [320, 240]
+    }
+  ],
+  "connections": {
+    "When clicking \"Execute Workflow\"": {
+      "main": [
+        [
+          {
+            "node": "Execute Java Pipeline",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  }
+}
